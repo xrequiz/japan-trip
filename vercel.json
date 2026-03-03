@@ -1,0 +1,15 @@
+{
+    "outputDirectory": "web",
+    "routes": [
+        {
+            "src": "/data/(.*)",
+            "headers": {
+                "Cache-Control": "public, max-age=0, must-revalidate"
+            }
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/$1"
+        }
+    ]
+}

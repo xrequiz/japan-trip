@@ -1,0 +1,118 @@
+/* Custom Base Styles */
+:root {
+    --leaflet-tile-filter: brightness(0.9) contrast(1.1) grayscale(0.2);
+}
+
+.dark {
+    --leaflet-tile-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling for horizontal filters */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Glassmorphism Classes */
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dark .glassmorphism {
+    background: rgba(15, 23, 42, 0.85);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Custom Checkbox Toggle (Map Layers) */
+.toggle-checkbox:checked {
+    right: 0;
+    border-color: #FF4D85;
+}
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #FF4D85;
+}
+
+/* Leaflet Dark Mode Support */
+.leaflet-layer,
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out,
+.leaflet-control-attribution {
+    filter: var(--leaflet-tile-filter);
+}
+
+/* Card Hover Animations */
+.place-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.place-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.dark .place-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-wrapper {
+    overflow: hidden;
+}
+
+.card-img {
+    transition: transform 0.7s ease;
+}
+
+.place-card:hover .card-img {
+    transform: scale(1.08);
+}
+
+/* Custom Marker Pins for Leaflet */
+.custom-div-icon .marker-pin {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50% 50% 0;
+    background: #FF4D85;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 50%;
+    top: 50%;
+    margin: -15px 0 0 -15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.custom-div-icon .marker-pin::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin: 3px 0 0 3px;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.custom-div-icon i {
+    position: absolute;
+    width: 22px;
+    font-size: 14px;
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+    text-align: center;
+    top: 3px;
+    z-index: 10;
+}

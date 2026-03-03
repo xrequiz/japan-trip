@@ -1,0 +1,1482 @@
+[
+  {
+    "name": "Onari Yokocho Kamakura",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Onari%20Yokocho%20Kamakura",
+    "lat": 35.3171551,
+    "lng": 139.5493816
+  },
+  {
+    "name": "Ginza Kagari Kamakura Branch",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ginza%20Kagari%20Kamakura%20Branch",
+    "lat": 35.320247,
+    "lng": 139.5519977
+  },
+  {
+    "name": "Charin",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Charin",
+    "lat": 35.3224715,
+    "lng": 139.5532876
+  },
+  {
+    "name": "Cafe Glühwürmweg",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cafe%20Gl%C3%BChw%C3%BCrmweg",
+    "lat": 35.3238656,
+    "lng": 139.55057309999998
+  },
+  {
+    "name": "Slow Rush Coffee",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Slow%20Rush%20Coffee",
+    "lat": 35.3179789,
+    "lng": 139.5495965
+  },
+  {
+    "name": "%ARABICA Tokyo Azabudai Hills 4F",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%25ARABICA%20Tokyo%20Azabudai%20Hills%204F",
+    "lat": 35.6612404,
+    "lng": 139.7403277
+  },
+  {
+    "name": "Kaitenzushi Nemuro Hanamaru Ginza",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kaitenzushi%20Nemuro%20Hanamaru%20Ginza",
+    "lat": 35.6722448,
+    "lng": 139.7624127
+  },
+  {
+    "name": "MEGA Don Quijote",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MEGA%20Don%20Quijote",
+    "lat": 35.5832731,
+    "lng": 139.7238908
+  },
+  {
+    "name": "BOOKOFF SUPER BAZAAR SEIYU Omori Store",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=BOOKOFF%20SUPER%20BAZAAR%20SEIYU%20Omori%20Store",
+    "lat": 35.5883262,
+    "lng": 139.7303162
+  },
+  {
+    "name": "Tokyo Station Ikaruga",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tokyo%20Station%20Ikaruga",
+    "lat": 35.6804661,
+    "lng": 139.76797349999998
+  },
+  {
+    "name": "Hirugao Tokyo Station",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hirugao%20Tokyo%20Station",
+    "lat": 35.6801319,
+    "lng": 139.7678531
+  },
+  {
+    "name": "Ramen Tanakashoten",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramen%20Tanakashoten",
+    "lat": 35.7987599,
+    "lng": 139.8127457
+  },
+  {
+    "name": "Hakata-Nagahama-Ramen Miyoshi",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hakata-Nagahama-Ramen%20Miyoshi",
+    "lat": 35.0086076,
+    "lng": 135.77057259999998
+  },
+  {
+    "name": "Tonchin Ikebukuro",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tonchin%20Ikebukuro",
+    "lat": 35.7276482,
+    "lng": 139.7132162
+  },
+  {
+    "name": "Musashino Abura Gakkai Waseda Head Shop",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Musashino%20Abura%20Gakkai%20Waseda%20Head%20Shop",
+    "lat": 35.7115443,
+    "lng": 139.7194714
+  },
+  {
+    "name": "Menya Sho Honten",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Menya%20Sho%20Honten",
+    "lat": 35.6965935,
+    "lng": 139.69660059999998
+  },
+  {
+    "name": "Men Mitsui",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Men%20Mitsui",
+    "lat": 35.7095285,
+    "lng": 139.79036069999998
+  },
+  {
+    "name": "Yoroiya Ramen",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yoroiya%20Ramen",
+    "lat": 35.7127535,
+    "lng": 139.7968075
+  },
+  {
+    "name": "Ramen Yamaguchi",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramen%20Yamaguchi",
+    "lat": 35.7099735,
+    "lng": 139.71390789999998
+  },
+  {
+    "name": "Tsuta",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tsuta",
+    "lat": 35.6703963,
+    "lng": 139.6824758
+  },
+  {
+    "name": "Sōsakumen Kōbō Nakiryū",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=S%C5%8Dsakumen%20K%C5%8Db%C5%8D%20Nakiry%C5%AB",
+    "lat": 35.7286889,
+    "lng": 139.7303411
+  },
+  {
+    "name": "Soba House Konjiki-Hototogisu",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Soba%20House%20Konjiki-Hototogisu",
+    "lat": 35.688813499999995,
+    "lng": 139.7083092
+  },
+  {
+    "name": "Homemade Ramen 麦苗",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Homemade%20Ramen%20%E9%BA%A6%E8%8B%97",
+    "lat": 35.5907762,
+    "lng": 139.7328033
+  },
+  {
+    "name": "＠cosme TOKYO",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%EF%BC%A0cosme%20TOKYO",
+    "lat": 35.6701458,
+    "lng": 139.7031743
+  },
+  {
+    "name": "Ginza Tsukiya",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ginza%20Tsukiya",
+    "lat": 35.669443799999996,
+    "lng": 139.7637594
+  },
+  {
+    "name": "Alpen Tokyo",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Alpen%20Tokyo",
+    "lat": 35.693391399999996,
+    "lng": 139.70071679999998
+  },
+  {
+    "name": "Curry Station Niagara",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Curry%20Station%20Niagara",
+    "lat": 35.639117,
+    "lng": 139.6927582
+  },
+  {
+    "name": "Oreryu Shio-Ramen",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Oreryu%20Shio-Ramen",
+    "lat": 35.6672586,
+    "lng": 139.7054067
+  },
+  {
+    "name": "Aidaya",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Aidaya",
+    "lat": 35.7082346,
+    "lng": 139.77587119999998
+  },
+  {
+    "name": "Ramen Katsumoto",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramen%20Katsumoto",
+    "lat": 35.7007944,
+    "lng": 139.7528897
+  },
+  {
+    "name": "Chinchintei",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chinchintei",
+    "lat": 35.7032901,
+    "lng": 139.5346561
+  },
+  {
+    "name": "Bubuka Kichijōji Kitaguchi",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bubuka%20Kichij%C5%8Dji%20Kitaguchi",
+    "lat": 35.7038485,
+    "lng": 139.57833
+  },
+  {
+    "name": "Ramen Break Beats",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramen%20Break%20Beats",
+    "lat": 35.6335161,
+    "lng": 139.6987692
+  },
+  {
+    "name": "Ramen Hayashida Shinjuku Shop",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramen%20Hayashida%20Shinjuku%20Shop",
+    "lat": 35.690729,
+    "lng": 139.7037509
+  },
+  {
+    "name": "ROGER'S - ロジャース 京都",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ROGER'S%20-%20%E3%83%AD%E3%82%B8%E3%83%A3%E3%83%BC%E3%82%B9%20%E4%BA%AC%E9%83%BD",
+    "lat": 35.0074039,
+    "lng": 135.7666487
+  },
+  {
+    "name": "Gion Komori",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Gion%20Komori",
+    "lat": 35.0058072,
+    "lng": 135.7746025
+  },
+  {
+    "name": "Kyōto Denim",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ky%C5%8Dto%20Denim",
+    "lat": 34.9873567,
+    "lng": 135.7628685
+  },
+  {
+    "name": "6-chōme-10-3 Ueno",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=6-ch%C5%8Dme-10-3%20Ueno",
+    "lat": 35.708974999999995,
+    "lng": 139.774854
+  },
+  {
+    "name": "Japan Blue Jeans",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Japan%20Blue%20Jeans",
+    "lat": 35.005168999999995,
+    "lng": 135.7669242
+  },
+  {
+    "name": "Local SAKE and BEER Stand 336",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Local%20SAKE%20and%20BEER%20Stand%20336",
+    "lat": 34.9952724,
+    "lng": 135.77836159999998
+  },
+  {
+    "name": "松韻堂",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9D%BE%E9%9F%BB%E5%A0%82",
+    "lat": 34.996773,
+    "lng": 135.7809761
+  },
+  {
+    "name": "Gallery & Cafe nanairoha",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Gallery%20%26%20Cafe%20nanairoha",
+    "lat": 35.025630899999996,
+    "lng": 135.796585
+  },
+  {
+    "name": "Botanic Coffee Kyoto",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Botanic%20Coffee%20Kyoto",
+    "lat": 35.0187567,
+    "lng": 135.793456
+  },
+  {
+    "name": "Ao Onigiri",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ao%20Onigiri",
+    "lat": 35.023476599999995,
+    "lng": 135.793355
+  },
+  {
+    "name": "Sushi Ishimatsu",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sushi%20Ishimatsu",
+    "lat": 35.022202,
+    "lng": 135.793441
+  },
+  {
+    "name": "Okonomiyaki Zen",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Okonomiyaki%20Zen",
+    "lat": 35.0154682,
+    "lng": 135.7937967
+  },
+  {
+    "name": "Chikuyu-an Taro no Atsumori",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chikuyu-an%20Taro%20no%20Atsumori",
+    "lat": 35.018544999999996,
+    "lng": 135.7588386
+  },
+  {
+    "name": "Ramen Touhichi",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramen%20Touhichi",
+    "lat": 35.0500201,
+    "lng": 135.7914224
+  },
+  {
+    "name": "Ramen Miyako - Gion Main Shop",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramen%20Miyako%20-%20Gion%20Main%20Shop",
+    "lat": 35.0045602,
+    "lng": 135.7777317
+  },
+  {
+    "name": "Toradra Records",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Toradra%20Records",
+    "lat": 35.0076086,
+    "lng": 135.7682131
+  },
+  {
+    "name": "Ramen-dokoro Katsukyo",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramen-dokoro%20Katsukyo",
+    "lat": 34.965537999999995,
+    "lng": 135.7685233
+  },
+  {
+    "name": "Nakamura Tokichi Honten (Main Store)",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nakamura%20Tokichi%20Honten%20(Main%20Store)",
+    "lat": 34.889488199999995,
+    "lng": 135.8018191
+  },
+  {
+    "name": "Fukujuen Uji (Uji Tea Factory)",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Fukujuen%20Uji%20(Uji%20Tea%20Factory)",
+    "lat": 34.8902055,
+    "lng": 135.8105184
+  },
+  {
+    "name": "Mitsuboshien Kanbayashi Sannyu Main Shop",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mitsuboshien%20Kanbayashi%20Sannyu%20Main%20Shop",
+    "lat": 34.891117799999996,
+    "lng": 135.8063779
+  },
+  {
+    "name": "Tsuji Rihei Honten Kyoto Uji Main Shop",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tsuji%20Rihei%20Honten%20Kyoto%20Uji%20Main%20Shop",
+    "lat": 34.889458399999995,
+    "lng": 135.7973913
+  },
+  {
+    "name": "Itoh Kyuemon - Uji Head Shop / Sabo",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Itoh%20Kyuemon%20-%20Uji%20Head%20Shop%20%2F%20Sabo",
+    "lat": 34.896634999999996,
+    "lng": 135.8087789
+  },
+  {
+    "name": "Ippodo Tea Kyoto Main Store",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ippodo%20Tea%20Kyoto%20Main%20Store",
+    "lat": 35.0144485,
+    "lng": 135.7673381
+  },
+  {
+    "name": "Yasaka Shrine",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yasaka%20Shrine",
+    "lat": 35.0036559,
+    "lng": 135.7785534
+  },
+  {
+    "name": "music bar rpm",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=music%20bar%20rpm",
+    "lat": 35.661793599999996,
+    "lng": 139.6691539
+  },
+  {
+    "name": "錦鏡池",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%8C%A6%E9%8F%A1%E6%B1%A0",
+    "lat": 35.0267633,
+    "lng": 135.7985067
+  },
+  {
+    "name": "Kannon-den (Ginkaku)",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kannon-den%20(Ginkaku)",
+    "lat": 35.026541699999996,
+    "lng": 135.7980464
+  },
+  {
+    "name": "Bamboo Fence",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bamboo%20Fence",
+    "lat": 35.0269964,
+    "lng": 135.7978264
+  },
+  {
+    "name": "Ginkakujimaecho Park",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ginkakujimaecho%20Park",
+    "lat": 35.0287442,
+    "lng": 135.7935617
+  },
+  {
+    "name": "Men-ya Inoichi",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Men-ya%20Inoichi",
+    "lat": 35.001328199999996,
+    "lng": 135.7669396
+  },
+  {
+    "name": "Iso Stand",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Iso%20Stand",
+    "lat": 35.006217899999996,
+    "lng": 135.756933
+  },
+  {
+    "name": "VINYL RECORD MUSIC BAR 『P.M.SOUNDS KYOTO』",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=VINYL%20RECORD%20MUSIC%20BAR%20%E3%80%8EP.M.SOUNDS%20KYOTO%E3%80%8F",
+    "lat": 35.0080411,
+    "lng": 135.7696243
+  },
+  {
+    "name": "Kyoto Botanical Gardens",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kyoto%20Botanical%20Gardens",
+    "lat": 35.048617199999995,
+    "lng": 135.7630378
+  },
+  {
+    "name": "Byodo-in Omotesando",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Byodo-in%20Omotesando",
+    "lat": 34.891704499999996,
+    "lng": 135.8060056
+  },
+  {
+    "name": "Ujigami Jinja",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ujigami%20Jinja",
+    "lat": 34.8919274,
+    "lng": 135.8112954
+  },
+  {
+    "name": "Uji Shrine",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Uji%20Shrine",
+    "lat": 34.8910523,
+    "lng": 135.8107521
+  },
+  {
+    "name": "Statue of Murasaki Shikibu",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Statue%20of%20Murasaki%20Shikibu",
+    "lat": 34.8922726,
+    "lng": 135.8058579
+  },
+  {
+    "name": "Byodo-in Hoshokan Museum",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Byodo-in%20Hoshokan%20Museum",
+    "lat": 34.888754399999996,
+    "lng": 135.8073997
+  },
+  {
+    "name": "Byodo-in",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Byodo-in",
+    "lat": 34.8892908,
+    "lng": 135.8076783
+  },
+  {
+    "name": "Taihoan",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Taihoan",
+    "lat": 34.8890197,
+    "lng": 135.8087158
+  },
+  {
+    "name": "Mimuroto-ji Temple",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mimuroto-ji%20Temple",
+    "lat": 34.900495299999996,
+    "lng": 135.8191632
+  },
+  {
+    "name": "Otagi Nenbutsuji Temple",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Otagi%20Nenbutsuji%20Temple",
+    "lat": 35.0311428,
+    "lng": 135.6615546
+  },
+  {
+    "name": "Sannenzaka",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sannenzaka",
+    "lat": 34.9966644,
+    "lng": 135.78100799999999
+  },
+  {
+    "name": "Murin-an Garden",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Murin-an%20Garden",
+    "lat": 35.0116298,
+    "lng": 135.786946
+  },
+  {
+    "name": "Kyoto Sento Imperial Palace",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kyoto%20Sento%20Imperial%20Palace",
+    "lat": 35.0223399,
+    "lng": 135.7651343
+  },
+  {
+    "name": "PIZZERIA MAMA",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=PIZZERIA%20MAMA",
+    "lat": 35.0112549,
+    "lng": 135.67943259999998
+  },
+  {
+    "name": "Kazariya",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kazariya",
+    "lat": 35.045185,
+    "lng": 135.742778
+  },
+  {
+    "name": "Juugo",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Juugo",
+    "lat": 35.0255443,
+    "lng": 135.7956932
+  },
+  {
+    "name": "KYOTO SAKE GARDEN",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=KYOTO%20SAKE%20GARDEN",
+    "lat": 35.0092961,
+    "lng": 135.7696234
+  },
+  {
+    "name": "Loutre otter cafe",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Loutre%20otter%20cafe",
+    "lat": 35.006618599999996,
+    "lng": 135.7668143
+  },
+  {
+    "name": "Philosopher's Path",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Philosopher's%20Path",
+    "lat": 35.0266194,
+    "lng": 135.795457
+  },
+  {
+    "name": "Nishikaigan ANCHOR",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nishikaigan%20ANCHOR",
+    "lat": 35.0056072,
+    "lng": 135.76728599999998
+  },
+  {
+    "name": "THE BREAD",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=THE%20BREAD",
+    "lat": 35.0075785,
+    "lng": 135.7611621
+  },
+  {
+    "name": "CHABAKKA TEA PARKS",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=CHABAKKA%20TEA%20PARKS",
+    "lat": 35.318388399999996,
+    "lng": 139.5496665
+  },
+  {
+    "name": "Goodman Roaster Kyoto",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Goodman%20Roaster%20Kyoto",
+    "lat": 35.0024359,
+    "lng": 135.7556711
+  },
+  {
+    "name": "Garden Lab Tea & Bar",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Garden%20Lab%20Tea%20%26%20Bar",
+    "lat": 34.9987882,
+    "lng": 135.7660472
+  },
+  {
+    "name": "Premium Matcha & Bar Kashoan CLASSIC TEA & COCKTAILS",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Premium%20Matcha%20%26%20Bar%20Kashoan%20CLASSIC%20TEA%20%26%20COCKTAILS",
+    "lat": 35.006044599999996,
+    "lng": 135.7734226
+  },
+  {
+    "name": "紅茶専門店 feuillage",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%B4%85%E8%8C%B6%E5%B0%82%E9%96%80%E5%BA%97%20feuillage",
+    "lat": 35.0077405,
+    "lng": 135.7710912
+  },
+  {
+    "name": "fiveran",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=fiveran",
+    "lat": 35.0089849,
+    "lng": 135.7579136
+  },
+  {
+    "name": "Mensho Takamatsu - Main Shop",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mensho%20Takamatsu%20-%20Main%20Shop",
+    "lat": 35.006191199999996,
+    "lng": 135.7608493
+  },
+  {
+    "name": "Nishiki Market",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nishiki%20Market",
+    "lat": 35.0050258,
+    "lng": 135.764723
+  },
+  {
+    "name": "Kinkaku-ji",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kinkaku-ji",
+    "lat": 35.03937,
+    "lng": 135.7292431
+  },
+  {
+    "name": "Kiyomizu-dera",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kiyomizu-dera",
+    "lat": 34.9946662,
+    "lng": 135.784661
+  },
+  {
+    "name": "Higashiyama Jisho-ji",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Higashiyama%20Jisho-ji",
+    "lat": 35.0270213,
+    "lng": 135.7982058
+  },
+  {
+    "name": "% ARABICA Kyoto Arashiyama",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%25%20ARABICA%20Kyoto%20Arashiyama",
+    "lat": 35.0135432,
+    "lng": 135.6764469
+  },
+  {
+    "name": "Adashino Nenbutsuji Temple",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Adashino%20Nenbutsuji%20Temple",
+    "lat": 35.0269596,
+    "lng": 135.6656131
+  },
+  {
+    "name": "Heijō Palace Site Historical National Park",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Heij%C5%8D%20Palace%20Site%20Historical%20National%20Park",
+    "lat": 34.686507899999995,
+    "lng": 135.7942516
+  },
+  {
+    "name": "Sushi Hikari",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sushi%20Hikari",
+    "lat": 34.6541985,
+    "lng": 135.4332602
+  },
+  {
+    "name": "Tōdai-ji",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=T%C5%8Ddai-ji",
+    "lat": 34.6889851,
+    "lng": 135.8398158
+  },
+  {
+    "name": "Manyo Botanical Gardens",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Manyo%20Botanical%20Gardens",
+    "lat": 34.6824519,
+    "lng": 135.8442139
+  },
+  {
+    "name": "Minoh Falls",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Minoh%20Falls",
+    "lat": 34.8538281,
+    "lng": 135.4719911
+  },
+  {
+    "name": "Nakatanidou",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nakatanidou",
+    "lat": 34.681943,
+    "lng": 135.8288995
+  },
+  {
+    "name": "Asuka",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Asuka",
+    "lat": 34.4713594,
+    "lng": 135.8206452
+  },
+  {
+    "name": "Mount Wakakusa base North Gate",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mount%20Wakakusa%20base%20North%20Gate",
+    "lat": 34.6864352,
+    "lng": 135.8459393
+  },
+  {
+    "name": "Daigo-ji",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Daigo-ji",
+    "lat": 34.9507674,
+    "lng": 135.8192839
+  },
+  {
+    "name": "Osaka Aquarium Kaiyukan",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Osaka%20Aquarium%20Kaiyukan",
+    "lat": 34.6545182,
+    "lng": 135.4289645
+  },
+  {
+    "name": "Mount Wakakusa",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mount%20Wakakusa",
+    "lat": 34.691149599999996,
+    "lng": 135.8544345
+  },
+  {
+    "name": "Hagiou",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hagiou",
+    "lat": 34.479480099999996,
+    "lng": 135.8185639
+  },
+  {
+    "name": "Okadera",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Okadera",
+    "lat": 34.4718322,
+    "lng": 135.8282623
+  },
+  {
+    "name": "Hotel Nara Sakurai no Sato",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Nara%20Sakurai%20no%20Sato",
+    "lat": 34.4886675,
+    "lng": 135.8406214
+  },
+  {
+    "name": "טירת אוסקה",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%D7%98%D7%99%D7%A8%D7%AA%20%D7%90%D7%95%D7%A1%D7%A7%D7%94",
+    "lat": 34.6872571,
+    "lng": 135.5258546
+  },
+  {
+    "name": "Mount Hiei",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mount%20Hiei",
+    "lat": 35.0622477,
+    "lng": 135.8315317
+  },
+  {
+    "name": "Fushimi Inari Taisha",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Fushimi%20Inari%20Taisha",
+    "lat": 34.9676945,
+    "lng": 135.7791876
+  },
+  {
+    "name": "Kyoto National Museum",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kyoto%20National%20Museum",
+    "lat": 34.9899887,
+    "lng": 135.773116
+  },
+  {
+    "name": "Arashiyama Monkey Park Iwatayama",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Arashiyama%20Monkey%20Park%20Iwatayama",
+    "lat": 35.011395,
+    "lng": 135.6766245
+  },
+  {
+    "name": "Arashiyama Bamboo Forest",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Arashiyama%20Bamboo%20Forest",
+    "lat": 35.0168187,
+    "lng": 135.67130129999998
+  },
+  {
+    "name": "BEE’S KNEES",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=BEE%E2%80%99S%20KNEES",
+    "lat": 35.005012,
+    "lng": 135.7702976
+  },
+  {
+    "name": "in the Moon",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=in%20the%20Moon",
+    "lat": 35.004103799999996,
+    "lng": 135.772783
+  },
+  {
+    "name": "music bar Beatle momo",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=music%20bar%20Beatle%20momo",
+    "lat": 35.0055501,
+    "lng": 135.7706747
+  },
+  {
+    "name": "Kasagiya",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kasagiya",
+    "lat": 34.9981365,
+    "lng": 135.7808162
+  },
+  {
+    "name": "野外テラス 水の音",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%87%8E%E5%A4%96%E3%83%86%E3%83%A9%E3%82%B9%20%E6%B0%B4%E3%81%AE%E9%9F%B3",
+    "lat": 35.7253409,
+    "lng": 139.2091802
+  },
+  {
+    "name": "Gyoza Taizou",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Gyoza%20Taizou",
+    "lat": 35.0043404,
+    "lng": 135.7685991
+  },
+  {
+    "name": "Zeniarai Benten Shrine",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Zeniarai%20Benten%20Shrine",
+    "lat": 35.3256988,
+    "lng": 139.5422058
+  },
+  {
+    "name": "聴景居",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E8%81%B4%E6%99%AF%E5%B1%85",
+    "lat": 35.648590299999995,
+    "lng": 139.70051089999998
+  },
+  {
+    "name": "Oedo Antique Market",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Oedo%20Antique%20Market",
+    "lat": 35.6764325,
+    "lng": 139.7640898
+  },
+  {
+    "name": "Hoshijirushi",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hoshijirushi",
+    "lat": 35.4741328,
+    "lng": 139.6281516
+  },
+  {
+    "name": "Hedgehog Cafe & Pet Store HARRY Harajuku",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hedgehog%20Cafe%20%26%20Pet%20Store%20HARRY%20Harajuku",
+    "lat": 35.669590299999996,
+    "lng": 139.7034869
+  },
+  {
+    "name": "INCredible COFFEE",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=INCredible%20COFFEE",
+    "lat": 35.7074152,
+    "lng": 139.6504635
+  },
+  {
+    "name": "Kawagoe",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kawagoe",
+    "lat": 35.9251335,
+    "lng": 139.4858042
+  },
+  {
+    "name": "Junteuchi Men to Mirai",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Junteuchi%20Men%20to%20Mirai",
+    "lat": 35.6635269,
+    "lng": 139.66861409999999
+  },
+  {
+    "name": "Iruca Tokyo Roppongi",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Iruca%20Tokyo%20Roppongi",
+    "lat": 35.6648012,
+    "lng": 139.7316413
+  },
+  {
+    "name": "HARU CHAN Ramen",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=HARU%20CHAN%20Ramen",
+    "lat": 35.6662135,
+    "lng": 139.75953769999998
+  },
+  {
+    "name": "Chūkasoba Kotetsu",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ch%C5%ABkasoba%20Kotetsu",
+    "lat": 35.6646268,
+    "lng": 139.6663383
+  },
+  {
+    "name": "Sasaki Seimenjo",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sasaki%20Seimenjo",
+    "lat": 35.7085541,
+    "lng": 139.59237059999998
+  },
+  {
+    "name": "1277-8 Hatsuzawamachi",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=1277-8%20Hatsuzawamachi",
+    "lat": 35.6413596,
+    "lng": 139.2857908
+  },
+  {
+    "name": "HINOYA",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=HINOYA",
+    "lat": 35.710329699999996,
+    "lng": 139.7749341
+  },
+  {
+    "name": "Kamakura",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kamakura",
+    "lat": 35.319212799999995,
+    "lng": 139.5466731
+  },
+  {
+    "name": "Kimono Reborn Tokyo",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kimono%20Reborn%20Tokyo",
+    "lat": 35.7140303,
+    "lng": 139.8006528
+  },
+  {
+    "name": "Chureito Pagoda",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chureito%20Pagoda",
+    "lat": 35.5012626,
+    "lng": 138.8013852
+  },
+  {
+    "name": "Asakusa Underground Street",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Asakusa%20Underground%20Street",
+    "lat": 35.7114596,
+    "lng": 139.79778009999998
+  },
+  {
+    "name": "Takase River",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Takase%20River",
+    "lat": 34.994507999999996,
+    "lng": 135.7667547
+  },
+  {
+    "name": "Hirobun",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hirobun",
+    "lat": 35.1252813,
+    "lng": 135.7638996
+  },
+  {
+    "name": "Akigawa Valley",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Akigawa%20Valley",
+    "lat": 35.7265758,
+    "lng": 139.1897668
+  },
+  {
+    "name": "MOMOTARO JEANS Koenji",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MOMOTARO%20JEANS%20Koenji",
+    "lat": 35.703766,
+    "lng": 139.64650229999998
+  },
+  {
+    "name": "Yamaguchi",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yamaguchi",
+    "lat": 35.7782416,
+    "lng": 139.434853
+  },
+  {
+    "name": "Centre The Bakery",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Centre%20The%20Bakery",
+    "lat": 35.6755334,
+    "lng": 139.76659519999998
+  },
+  {
+    "name": "Kinji Used Clothing Harajuku Branch",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kinji%20Used%20Clothing%20Harajuku%20Branch",
+    "lat": 35.6690562,
+    "lng": 139.7060816
+  },
+  {
+    "name": "I’m donut ? Nakameguro",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=I%E2%80%99m%20donut%20%3F%20Nakameguro",
+    "lat": 35.6444289,
+    "lng": 139.69934949999998
+  },
+  {
+    "name": "Men'ya Yoshiki",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Men'ya%20Yoshiki",
+    "lat": 35.7191075,
+    "lng": 139.8582721
+  },
+  {
+    "name": "Tokyo Style Noodle Hotate Biyori",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tokyo%20Style%20Noodle%20Hotate%20Biyori",
+    "lat": 35.6985621,
+    "lng": 139.77714749999998
+  },
+  {
+    "name": "Ramen Hirai",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramen%20Hirai",
+    "lat": 35.6880236,
+    "lng": 139.4796711
+  },
+  {
+    "name": "Udon Maruka",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Udon%20Maruka",
+    "lat": 35.6966988,
+    "lng": 139.7601228
+  },
+  {
+    "name": "Tsujita Ginza",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tsujita%20Ginza",
+    "lat": 35.671432599999996,
+    "lng": 139.7673806
+  },
+  {
+    "name": "Arakurayama Sengen Park",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Arakurayama%20Sengen%20Park",
+    "lat": 35.501390799999996,
+    "lng": 138.8016313
+  },
+  {
+    "name": "Totoro’s Forest No. 1",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Totoro%E2%80%99s%20Forest%20No.%201",
+    "lat": 35.780184,
+    "lng": 139.42185379999998
+  },
+  {
+    "name": "Maguro Mart",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Maguro%20Mart",
+    "lat": 35.7095541,
+    "lng": 139.66650439999998
+  },
+  {
+    "name": "Kitaoji Roastery Lab",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kitaoji%20Roastery%20Lab",
+    "lat": 35.043866799999996,
+    "lng": 135.7603637
+  },
+  {
+    "name": "אטאמי",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%D7%90%D7%98%D7%90%D7%9E%D7%99",
+    "lat": 35.0963896,
+    "lng": 139.07178399999998
+  },
+  {
+    "name": "Yugawara Station",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yugawara%20Station",
+    "lat": 35.1460873,
+    "lng": 139.1021767
+  },
+  {
+    "name": "Coffee Zingaro",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Coffee%20Zingaro",
+    "lat": 35.7095395,
+    "lng": 139.6657924
+  },
+  {
+    "name": "Kakita River",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kakita%20River",
+    "lat": 35.1027185,
+    "lng": 138.9021353
+  },
+  {
+    "name": "Furuhon Ichiba - Nishijin store",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Furuhon%20Ichiba%20-%20Nishijin%20store",
+    "lat": 35.0296782,
+    "lng": 135.7485563
+  },
+  {
+    "name": "AMERICAYA",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=AMERICAYA",
+    "lat": 35.709098,
+    "lng": 139.7749895
+  },
+  {
+    "name": "No Room For Squares ノールームフォースクエアーズ",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=No%20Room%20For%20Squares%20%E3%83%8E%E3%83%BC%E3%83%AB%E3%83%BC%E3%83%A0%E3%83%95%E3%82%A9%E3%83%BC%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2%E3%83%BC%E3%82%BA",
+    "lat": 35.6591442,
+    "lng": 139.66760069999998
+  },
+  {
+    "name": "Nishi-Kaigan Atsugi",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nishi-Kaigan%20Atsugi",
+    "lat": 35.4921924,
+    "lng": 139.3403591
+  },
+  {
+    "name": "Iyoshi Cola",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Iyoshi%20Cola",
+    "lat": 35.6644904,
+    "lng": 139.7032031
+  },
+  {
+    "name": "Todoroki Ravine Park",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Todoroki%20Ravine%20Park",
+    "lat": 35.603897599999996,
+    "lng": 139.6462372
+  },
+  {
+    "name": "Fukazawa Tiny Museum",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Fukazawa%20Tiny%20Museum",
+    "lat": 35.7473056,
+    "lng": 139.2082553
+  },
+  {
+    "name": "手打ち正麺 Hachimitsu",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%89%8B%E6%89%93%E3%81%A1%E6%AD%A3%E9%BA%BA%20Hachimitsu",
+    "lat": 35.6240118,
+    "lng": 139.7213571
+  },
+  {
+    "name": "Chūka Soba Ginza Hachigo",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ch%C5%ABka%20Soba%20Ginza%20Hachigo",
+    "lat": 35.6705477,
+    "lng": 139.77015
+  },
+  {
+    "name": "RECOfan",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=RECOfan",
+    "lat": 35.700715699999996,
+    "lng": 139.7733031
+  },
+  {
+    "name": "THE MUSIC BAR -CAVE SHIBUYA-",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=THE%20MUSIC%20BAR%20-CAVE%20SHIBUYA-",
+    "lat": 35.6608436,
+    "lng": 139.70298409999998
+  },
+  {
+    "name": "ＢＯＯＫ・ＯＦＦ",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%EF%BC%A2%EF%BC%AF%EF%BC%AF%EF%BC%AB%E3%83%BB%EF%BC%AF%EF%BC%A6%EF%BC%A6",
+    "lat": 35.531981,
+    "lng": 139.64161529999998
+  },
+  {
+    "name": "BOOKOFF SUPER BAZAAR Omiya Stellar Town Store",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=BOOKOFF%20SUPER%20BAZAAR%20Omiya%20Stellar%20Town%20Store",
+    "lat": 35.933681299999996,
+    "lng": 139.6217911
+  },
+  {
+    "name": "נארה",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%D7%A0%D7%90%D7%A8%D7%94",
+    "lat": 34.685109,
+    "lng": 135.8048019
+  },
+  {
+    "name": "Mount Mitake",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mount%20Mitake",
+    "lat": 35.7829416,
+    "lng": 139.1495027
+  },
+  {
+    "name": "Shimokitazawa",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shimokitazawa",
+    "lat": 35.665786,
+    "lng": 139.66986269999998
+  },
+  {
+    "name": "Shin-Yokohama Ramen Museum",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shin-Yokohama%20Ramen%20Museum",
+    "lat": 35.509952399999996,
+    "lng": 139.6146609
+  },
+  {
+    "name": "Jazz SPOT Intro",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Jazz%20SPOT%20Intro",
+    "lat": 35.7128908,
+    "lng": 139.7062758
+  },
+  {
+    "name": "Mount Oyama",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mount%20Oyama",
+    "lat": 35.441365999999995,
+    "lng": 139.23114569999998
+  },
+  {
+    "name": "Uji",
+    "category": "אחר",
+    "source": "Google Maps List Advanced",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Uji",
+    "lat": 34.884513399999996,
+    "lng": 135.79970369999998
+  }
+]

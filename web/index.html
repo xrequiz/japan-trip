@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ג'פאן אינווסטיגטור - המלצות לטיול מושלם ביפן</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            pink: '#FF4D85',
+                            dark: '#0f172a',
+                            light: '#f8fafc',
+                            card: '#1e293b'
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- App Data (Removed static scripts to load dynamically instead) -->
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-gray-50 text-brand-dark dark:bg-brand-dark dark:text-gray-100 font-sans transition-colors duration-300">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 glassmorphism shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-torii-gate text-3xl text-brand-pink"></i>
+                <h1
+                    class="text-2xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-l from-brand-pink to-purple-600">
+                    ג'פאן אינווסטיגטור</h1>
+            </div>
+
+            <nav class="hidden md:flex gap-8 font-medium">
+                <a href="#" class="hover:text-brand-pink transition-colors">בית</a>
+                <a href="#" class="hover:text-brand-pink transition-colors">מסלולים</a>
+                <a href="#" class="hover:text-brand-pink transition-colors">אודות</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <button id="themeToggle"
+                    class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-moon dark:hidden"></i>
+                    <i class="fa-solid fa-sun hidden dark:block text-yellow-400"></i>
+                </button>
+                <!-- New Minimum Score Slider -->
+                <div
+                    class="hidden lg:flex items-center gap-3 bg-white dark:bg-gray-800 p-2 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
+                    <span class="text-sm font-medium text-gray-600 dark:text-gray-300">מינימום דירוג:</span>
+                    <input type="range" id="scoreThreshold" min="40" max="100" value="50"
+                        class="w-24 accent-brand-pink cursor-pointer">
+                    <span id="thresholdVal"
+                        class="bg-pink-100 dark:bg-pink-900/40 text-brand-pink dark:text-pink-300 px-2 py-1 rounded text-xs font-bold">50</span>
+                </div>
+                <!-- /New slider -->
+
+                <div class="relative hidden sm:block">
+                    <input type="text" id="searchInput" placeholder="חפש מקום..."
+                        class="pl-4 pr-10 py-2 rounded-full bg-gray-100 dark:bg-gray-800 border-none focus:ring-2 focus:ring-brand-pink outline-none w-48 xl:w-64 text-sm transition-all focus:w-64">
+                    <i class="fa-solid fa-search absolute right-4 top-3 text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[60vh] min-h-[500px] mt-20 flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2670&auto=format&fit=crop"
+                class="w-full h-full object-cover animate-fade-in filter brightness-50 dark:brightness-[0.3]"
+                alt="Japan Hero">
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-50 dark:from-brand-dark to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 animate-slide-up">
+            <h2 class="text-4xl md:text-6xl font-black text-white mb-4 drop-shadow-lg">המלצות לטיול מושלם ביפן</h2>
+            <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto font-light">גלו את המסעדות, התצפיות
+                והמקומות הנסתרים של טוקיו, קיוטו והסביבה.</p>
+            <button id="toggleMapBtn"
+                class="bg-brand-pink hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-pink-500/50 transition-all transform hover:-translate-y-1 flex items-center gap-2 mx-auto">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span id="toggleMapText">תצוגת מפה</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="max-w-7xl mx-auto px-4 -mt-10 relative z-20">
+        <div
+            class="bg-white dark:bg-brand-card rounded-2xl shadow-xl p-4 md:p-6 mb-8 border border-gray-100 dark:border-gray-800">
+
+            <!-- Regions -->
+            <div class="mb-6">
+                <!-- <h3 class="text-sm font-bold text-gray-500 mb-3 uppercase tracking-wider">לאן תרצו לנסוע?</h3> -->
+                <div class="flex gap-2 overflow-x-auto pb-2 scrollbar-hide" id="regionFilters">
+                    <button
+                        class="filter-btn active px-5 py-2 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm"
+                        data-region="All">הכל</button>
+                    <button
+                        class="filter-btn px-5 py-2 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm"
+                        data-region="Tokyo">טוקיו והסביבה</button>
+                    <button
+                        class="filter-btn px-5 py-2 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm"
+                        data-region="Kyoto">קיוטו</button>
+                    <button
+                        class="filter-btn px-5 py-2 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm"
+                        data-region="Osaka">אוסקה</button>
+                    <button
+                        class="filter-btn px-5 py-2 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm"
+                        data-region="Hakone">האקונה</button>
+                </div>
+            </div>
+
+            <!-- Categories -->
+            <hr class="border-gray-100 dark:border-gray-800 mb-6">
+            <div class="flex gap-4 overflow-x-auto pb-2 scrollbar-hide" id="categoryFilters">
+                <!-- Rendered dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl mx-auto px-4 pb-20 relative">
+
+        <!-- Status / Stats -->
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-6 gap-4">
+            <h2 class="text-2xl font-bold flex items-center gap-2">
+                מציג <span id="placeCount" class="text-brand-pink">0</span> תוצאות
+            </h2>
+
+            <!-- New Stats Display -->
+            <div class="grid grid-cols-3 gap-3 w-full md:w-auto">
+                <div
+                    class="bg-white dark:bg-brand-card p-3 rounded-xl border border-gray-100 dark:border-gray-800 text-center shadow-sm">
+                    <div class="text-[10px] text-gray-500 font-bold uppercase mb-1">סך הכל</div>
+                    <div id="statTotal" class="text-lg font-black text-brand-dark dark:text-white">-</div>
+                </div>
+                <div
+                    class="bg-white dark:bg-brand-card p-3 rounded-xl border border-gray-100 dark:border-gray-800 text-center shadow-sm">
+                    <div class="text-[10px] text-green-500 font-bold uppercase mb-1">בסינון</div>
+                    <div id="statFiltered" class="text-lg font-black text-brand-dark dark:text-white">-</div>
+                </div>
+                <div
+                    class="bg-white dark:bg-brand-card p-3 rounded-xl border border-gray-100 dark:border-gray-800 text-center shadow-sm">
+                    <div class="text-[10px] text-purple-500 font-bold uppercase mb-1">דירוג ממוצע</div>
+                    <div id="statAvg" class="text-lg font-black text-brand-dark dark:text-white">-</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery / Map Container -->
+        <div class="relative w-full transition-all duration-500">
+            <!-- Map View (Hidden initially) -->
+            <div id="mapContainer"
+                class="hidden w-full h-[600px] rounded-2xl overflow-hidden shadow-xl mb-8 border border-gray-200 dark:border-gray-800 relative z-10 transition-opacity duration-300 opacity-0">
+                <div id="map" class="w-full h-full"></div>
+
+                <!-- Map Tools Overlay -->
+                <div
+                    class="absolute top-4 right-4 z-[400] bg-white/90 dark:bg-brand-card/90 backdrop-blur-md p-3 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
+                    <h4 class="font-bold text-sm mb-2">סנן מפה</h4>
+                    <div id="mapLayerToggles" class="flex flex-col gap-2 max-h-64 overflow-y-auto pr-2">
+                        <!-- Toggles rendered here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery View -->
+            <div id="galleryGrid" class="flex flex-col gap-10 transition-opacity duration-300">
+                <!-- Place Cards injected here -->
+            </div>
+
+            <div id="emptyState" class="hidden flex-col items-center justify-center py-20 text-gray-400">
+                <i class="fa-regular fa-face-frown text-6xl mb-4"></i>
+                <p class="text-xl">לא מצאנו תוצאות לסינון הזה.</p>
+                <button id="resetFiltersBtn" class="mt-4 text-brand-pink hover:underline">נקה סינונים</button>
+            </div>
+        </div>
+
+        <!-- Pagination / Load More -->
+        <div class="mt-10 flex justify-center">
+            <button id="loadMoreBtn"
+                class="hidden bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 px-8 py-3 rounded-full font-bold transition-colors">
+                טען עוד
+            </button>
+        </div>
+    </main>
+
+    <!-- System Messages -->
+    <div id="messageBox"
+        class="fixed bottom-5 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-6 py-3 rounded-full shadow-2xl z-[9999] hidden opacity-0 transition-opacity duration-300">
+        <span id="messageContent" class="text-sm font-medium"></span>
+    </div>
+
+    <!-- App Logic -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
