@@ -134,24 +134,31 @@
             class="bg-white dark:bg-brand-card rounded-2xl shadow-xl p-4 md:p-6 mb-8 border border-gray-100 dark:border-gray-800">
 
             <!-- Regions -->
-            <div class="mb-6">
+            <div class="mb-4">
                 <!-- <h3 class="text-sm font-bold text-gray-500 mb-3 uppercase tracking-wider">לאן תרצו לנסוע?</h3> -->
                 <div class="flex gap-2 overflow-x-auto pb-2 scrollbar-hide" id="regionFilters">
                     <button
-                        class="filter-btn active px-5 py-2 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm"
+                        class="filter-btn active shrink-0 px-5 py-2 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm"
                         data-region="All">הכל</button>
                     <button
-                        class="filter-btn px-5 py-2 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm"
+                        class="filter-btn shrink-0 px-5 py-2 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm"
                         data-region="Tokyo">טוקיו והסביבה</button>
                     <button
-                        class="filter-btn px-5 py-2 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm"
+                        class="filter-btn shrink-0 px-5 py-2 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm"
                         data-region="Kyoto">קיוטו</button>
                     <button
-                        class="filter-btn px-5 py-2 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm"
+                        class="filter-btn shrink-0 px-5 py-2 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm"
                         data-region="Osaka">אוסקה</button>
                     <button
-                        class="filter-btn px-5 py-2 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm"
+                        class="filter-btn shrink-0 px-5 py-2 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm"
                         data-region="Hakone">האקונה</button>
+                </div>
+            </div>
+
+            <!-- Tokyo Wards -->
+            <div id="tokyoWardsContainer" class="mb-4 hidden fade-in">
+                <div class="flex gap-2 overflow-x-auto pb-2 scrollbar-hide" id="tokyoWardFilters">
+                    <!-- Rendered dynamically -->
                 </div>
             </div>
 
@@ -200,11 +207,22 @@
                 <div id="map" class="w-full h-full"></div>
 
                 <!-- Map Tools Overlay -->
-                <div
-                    class="absolute top-4 right-4 z-[400] bg-white/90 dark:bg-brand-card/90 backdrop-blur-md p-3 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
-                    <h4 class="font-bold text-sm mb-2">סנן מפה</h4>
-                    <div id="mapLayerToggles" class="flex flex-col gap-2 max-h-64 overflow-y-auto pr-2">
-                        <!-- Toggles rendered here -->
+                <!-- Adapted to be suitable for mobile -->
+                <div class="absolute top-4 right-4 z-[400]">
+                    <div
+                        class="bg-white/95 dark:bg-brand-card/95 backdrop-blur-md rounded-xl shadow-xl border border-gray-200 dark:border-gray-700 w-48 md:w-56 transition-all duration-300 overflow-hidden">
+                        <button id="mapFilterToggleBtn"
+                            class="w-full flex justify-between items-center p-3 text-sm font-bold md:cursor-default focus:outline-none">
+                            <span>סנן מפה</span>
+                            <i class="fa-solid fa-chevron-down md:hidden transition-transform duration-300"
+                                id="mapFilterIcon"></i>
+                        </button>
+                        <div id="mapFilterContent" class="hidden md:block">
+                            <div id="mapLayerToggles"
+                                class="flex flex-col gap-2 max-h-48 md:max-h-64 overflow-y-auto p-3 pt-0 touch-pan-y">
+                                <!-- Toggles rendered here -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

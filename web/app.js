@@ -169,6 +169,7 @@ const STATE = {
     filteredPlaces: [],
     filters: {
         region: 'All',
+        tokyoWard: 'All',
         category: 'All',
         search: '',
         scoreThreshold: 50
@@ -230,7 +231,37 @@ function processPlace(place) {
         else if (typeof place.coordinates.longitude !== 'undefined') lng = place.coordinates.longitude;
     }
 
-    const descriptionText = place.description || (place.descriptions && place.descriptions.length > 0 ? place.descriptions[0].text : 'אין תיאור זמין.');
+    let descriptionText = place.real_description || place.description || (place.descriptions && place.descriptions.length > 0 ? place.descriptions[0].text : '');
+
+    let recommender = null;
+    const fallbackDesc = place.descriptions && place.descriptions.length > 0 ? place.descriptions[0].text : '';
+    const match = fallbackDesc.match(/מקום נהדר ש(.+?) אימת/);
+    if (match) {
+        recommender = match[1];
+    }
+
+    if (!recommender && place.sources && place.sources.length > 0) {
+        const sourceStr = place.sources.join(' ').toLowerCase();
+        if (sourceStr.includes('itay')) recommender = 'איתי';
+        else if (sourceStr.includes('jessy') || sourceStr.includes('jesse')) recommender = "ג'סי";
+        else if (sourceStr.includes('misha')) recommender = 'מישה';
+        else if (sourceStr.includes('japantorii') || sourceStr.includes('japan torii')) recommender = 'Japan Torii';
+        else if (sourceStr.includes('tiktok') || sourceStr.includes('instagram')) recommender = 'רשתות חברתיות';
+        else if (sourceStr.includes('reddit')) recommender = 'Reddit';
+        else if (sourceStr.includes('youtube')) recommender = 'YouTube';
+        else if (sourceStr.includes('timeout')) recommender = 'TimeOut';
+        else if (sourceStr.includes('japan times')) recommender = 'Japan Times';
+        else if (sourceStr.includes('navitime')) recommender = 'Navitime';
+        else if (sourceStr.includes('japan wonder travel')) recommender = 'Japan Wonder';
+        else if (sourceStr.includes('google maps')) recommender = 'Google Maps';
+        else if (sourceStr.includes('בלוגים')) recommender = 'בלוגרים למטיילים';
+    }
+
+    if (!recommender) {
+        recommender = 'צוות אינווסטיגטור';
+    }
+
+    if (!descriptionText) descriptionText = 'אין תיאור זמין.';
 
     const isNiche = place.classification === 'נישתי' || (place.categories && place.categories.includes('נישתי'));
 
@@ -238,6 +269,7 @@ function processPlace(place) {
         ...place,
         name: place.primaryName || (place.names && place.names[0]) || place.name || 'Unknown Place',
         description: descriptionText,
+        recommender: recommender,
         city: place.cities ? place.cities.join(', ') : (place.city || ''),
         classification: isNiche ? 'נישתי' : (place.classification || 'מיינסטרים'),
         lat,
@@ -317,6 +349,7 @@ async function loadData() {
         STATE.filteredPlaces = [...allPlaces];
 
         setupCategories();
+        setupTokyoWards();
         applyFilters();
         showMessage(`נטענו ${allPlaces.length} המלצות בהצלחה`);
 
@@ -340,7 +373,7 @@ function setupCategories() {
 
     // "All" button
     const allBtn = document.createElement('button');
-    allBtn.className = "filter-btn cat-btn active flex items-center gap-2 px-5 py-2 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm";
+    allBtn.className = "filter-btn cat-btn active flex items-center shrink-0 gap-2 px-5 py-2 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm";
     allBtn.dataset.cat = "All";
     allBtn.innerHTML = `<i class="fa-solid fa-border-all"></i> הכל`;
     catFragment.appendChild(allBtn);
@@ -354,7 +387,7 @@ function setupCategories() {
 
         // Category button
         const btn = document.createElement('button');
-        btn.className = "filter-btn cat-btn flex items-center gap-2 px-5 py-2 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm";
+        btn.className = "filter-btn cat-btn flex items-center shrink-0 gap-2 px-5 py-2 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm";
         btn.dataset.cat = cat;
         btn.innerHTML = `<i class="fa-solid ${icon}"></i> ${cat}`;
         catFragment.appendChild(btn);
@@ -366,10 +399,10 @@ function setupCategories() {
             <div class="flex items-center gap-2 text-sm">
                 <i class="${iconClasses}"></i> <span>${cat}</span>
             </div>
-            <div class="relative">
-                <input type="checkbox" class="sr-only toggle-checkbox" checked data-layer="${cat}">
-                <div class="block bg-gray-300 dark:bg-gray-600 w-10 h-6 rounded-full"></div>
-                <div class="dot absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition toggle-label"></div>
+            <div class="relative inline-flex items-center">
+                <input type="checkbox" class="sr-only peer toggle-checkbox" checked data-layer="${cat}">
+                <div class="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-brand-pink dark:bg-gray-600 transition-colors"></div>
+                <div class="absolute right-1 top-1 bg-white w-4 h-4 rounded-full transition-transform peer-checked:-translate-x-5"></div>
             </div>
         `;
         toggleFragment.appendChild(label);
@@ -379,6 +412,47 @@ function setupCategories() {
     catContainer.appendChild(catFragment);
     toggleContainer.innerHTML = '';
     toggleContainer.appendChild(toggleFragment);
+}
+
+function setupTokyoWards() {
+    const wards = new Set();
+    allPlaces.forEach(p => {
+        if (p.region === 'Tokyo') {
+            const cityStr = p.city || '';
+            if (cityStr.includes('Tokyo - ')) {
+                wards.add(cityStr.split('Tokyo - ')[1].trim());
+            } else {
+                wards.add('Other Wards (שאר טוקיו)');
+            }
+        }
+    });
+
+    const container = document.getElementById('tokyoWardFilters');
+    if (!container) return;
+
+    const fragment = document.createDocumentFragment();
+
+    const allBtn = document.createElement('button');
+    allBtn.className = "filter-btn ward-btn active shrink-0 px-4 py-1.5 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm";
+    allBtn.dataset.ward = "All";
+    allBtn.setAttribute('data-active', 'true');
+    allBtn.innerText = "כל אזורי טוקיו";
+    fragment.appendChild(allBtn);
+
+    Array.from(wards).sort((a, b) => {
+        if (a.includes('Other')) return 1;
+        if (b.includes('Other')) return -1;
+        return a.localeCompare(b);
+    }).forEach(ward => {
+        const btn = document.createElement('button');
+        btn.className = "filter-btn ward-btn shrink-0 px-4 py-1.5 rounded-full whitespace-nowrap font-medium transition-all bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 data-[active=true]:bg-brand-pink data-[active=true]:text-white text-sm";
+        btn.dataset.ward = ward;
+        btn.innerText = ward;
+        fragment.appendChild(btn);
+    });
+
+    container.innerHTML = '';
+    container.appendChild(fragment);
 }
 
 function setupEventListeners() {
@@ -408,9 +482,39 @@ function setupEventListeners() {
             const target = e.currentTarget;
             target.setAttribute('data-active', 'true');
             STATE.filters.region = target.dataset.region;
+
+            // Toggle Tokyo Wards visibility
+            const wardsContainer = document.getElementById('tokyoWardsContainer');
+            if (wardsContainer) {
+                if (STATE.filters.region === 'Tokyo') {
+                    wardsContainer.classList.remove('hidden');
+                } else {
+                    wardsContainer.classList.add('hidden');
+                    // Reset ward filter
+                    STATE.filters.tokyoWard = 'All';
+                    document.querySelectorAll('[data-ward]').forEach(b => b.removeAttribute('data-active'));
+                    const allWardBtn = document.querySelector('[data-ward="All"]');
+                    if (allWardBtn) allWardBtn.setAttribute('data-active', 'true');
+                }
+            }
+
             applyFilters();
         });
     });
+
+    // Tokyo Ward Filters
+    const wardContainer = document.getElementById('tokyoWardFilters');
+    if (wardContainer) {
+        wardContainer.addEventListener('click', (e) => {
+            const btn = e.target.closest('[data-ward]');
+            if (btn) {
+                document.querySelectorAll('[data-ward]').forEach(b => b.removeAttribute('data-active'));
+                btn.setAttribute('data-active', 'true');
+                STATE.filters.tokyoWard = btn.dataset.ward;
+                applyFilters();
+            }
+        });
+    }
 
     // Category Filters (delegated)
     document.getElementById('categoryFilters').addEventListener('click', (e) => {
@@ -470,7 +574,7 @@ function setupEventListeners() {
 // --- Filtering & State ---
 
 function applyFilters() {
-    const { region, category, search, scoreThreshold } = STATE.filters;
+    const { region, category, search, scoreThreshold, tokyoWard } = STATE.filters;
 
     let sumScores = 0;
 
@@ -480,7 +584,17 @@ function applyFilters() {
         const matchSearch = !search || p.name.toLowerCase().includes(search) || (p.description && p.description.toLowerCase().includes(search));
         const matchScore = (p.rankScore || 0) >= scoreThreshold;
 
-        const passes = matchRegion && matchCategory && matchSearch && matchScore;
+        let matchTokyoWard = true;
+        if (region === 'Tokyo' && tokyoWard !== 'All') {
+            const cityStr = p.city || '';
+            let placeWard = 'Other Wards (שאר טוקיו)';
+            if (cityStr.includes('Tokyo - ')) {
+                placeWard = cityStr.split('Tokyo - ')[1].trim();
+            }
+            matchTokyoWard = placeWard === tokyoWard;
+        }
+
+        const passes = matchRegion && matchCategory && matchSearch && matchScore && matchTokyoWard;
         if (passes) {
             sumScores += (p.rankScore || 0);
         }
@@ -533,20 +647,46 @@ function renderGallery() {
     emptyState.classList.add('hidden');
     emptyState.classList.remove('flex');
 
-    // Group ALL filtered places by category
+    // Group ALL filtered places
     const grouped = {};
+    const isTokyoView = STATE.filters.region === 'Tokyo';
+
     STATE.filteredPlaces.forEach(place => {
-        if (!grouped[place.category]) {
-            grouped[place.category] = [];
+        let groupKey = place.category;
+
+        // If Tokyo region is selected, group by area (ward) instead of category
+        if (isTokyoView) {
+            const cityStr = place.city || '';
+            if (cityStr.includes('Tokyo - ')) {
+                groupKey = cityStr.split('Tokyo - ')[1].trim();
+            } else {
+                groupKey = 'Other Wards (שאר טוקיו)';
+            }
         }
-        grouped[place.category].push(place);
+
+        if (!grouped[groupKey]) {
+            grouped[groupKey] = [];
+        }
+        grouped[groupKey].push(place);
     });
 
     const fragment = document.createDocumentFragment();
 
-    Object.keys(grouped).sort().forEach(category => {
-        const places = grouped[category];
-        const iconClasses = getCategoryIcon(category);
+    // Custom sort to put "Other Wards" at the end if we are in Tokyo view
+    const sortedGroups = Object.keys(grouped).sort((a, b) => {
+        if (isTokyoView) {
+            if (a.includes('Other Wards')) return 1;
+            if (b.includes('Other Wards')) return -1;
+        }
+        return a.localeCompare(b);
+    });
+
+    sortedGroups.forEach(groupName => {
+        const places = grouped[groupName];
+        let iconClasses = getCategoryIcon(groupName);
+        if (isTokyoView) {
+            iconClasses = "fa-solid fa-location-dot text-brand-pink";
+        }
 
         const section = document.createElement('div');
         section.className = "category-section w-full";
@@ -554,10 +694,10 @@ function renderGallery() {
         section.innerHTML = `
             <div class="flex items-center justify-between mb-4 px-2">
                 <h3 class="text-2xl font-black flex items-center gap-3 text-brand-dark dark:text-white">
-                    <i class="${iconClasses}"></i> ${category} 
+                    <i class="${iconClasses}"></i> ${groupName} 
                     <span class="text-sm font-normal text-gray-500 bg-gray-100 dark:bg-gray-800 px-3 py-1 rounded-full">${places.length}</span>
                 </h3>
-                <div class="flex gap-2">
+                <div class="flex gap-2 relative z-20">
                     <button class="scroll-right-btn w-10 h-10 rounded-full bg-white dark:bg-brand-card shadow hover:bg-gray-50 dark:hover:bg-gray-800 flex items-center justify-center text-gray-400 hover:text-brand-pink transition-colors">
                         <i class="fa-solid fa-chevron-right pl-1"></i>
                     </button>
@@ -566,7 +706,8 @@ function renderGallery() {
                     </button>
                 </div>
             </div>
-            <div class="category-scroll flex overflow-x-auto gap-6 pb-6 px-2 scrollbar-hide touch-pan-x">
+            <!-- Added hardware acceleration classes: transform-gpu, will-change-scroll -->
+            <div class="category-scroll flex overflow-x-auto gap-6 pb-6 px-2 scrollbar-hide touch-pan-x transform-gpu" style="will-change: scroll-position; -webkit-overflow-scrolling: touch;">
             </div>
         `;
 
@@ -591,13 +732,14 @@ function renderGallery() {
         // Allow vertical mouse-wheel to scroll horizontally, adjusted for RTL
         // Note: Using `scrollLeft` directly without `behavior: smooth` is crucial for mousewheels, 
         // as chaining `smooth` calls on continuous wheel events makes the scroll feel "stuck".
+        // Using passive: false since we call preventDefault()
         scrollContainer.addEventListener('wheel', (e) => {
             // Only capture vertical scrolls
-            if (e.deltaY !== 0 && e.deltaX === 0) {
+            if (e.deltaY !== 0 && Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
                 e.preventDefault();
                 scrollContainer.scrollLeft -= e.deltaY;
             }
-        });
+        }, { passive: false });
 
         places.forEach(place => {
             const hasCoords = place.lat && place.lng;
@@ -606,8 +748,8 @@ function renderGallery() {
                 : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.name + ' ' + (place.city || ''))}`;
 
             const card = document.createElement('div');
-            // Remove snap-start to avoid stiff snapping
-            card.className = "place-card flex-none w-[85vw] sm:w-[320px] lg:w-[350px] bg-white dark:bg-brand-card rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-800 group relative flex flex-col h-full";
+            // Added hardware acceleration classes: transform-gpu
+            card.className = "place-card flex-none w-[85vw] sm:w-[320px] lg:w-[350px] bg-white dark:bg-brand-card rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-800 group relative flex flex-col h-full transform-gpu transition-transform duration-300 hover:-translate-y-1";
 
             const imgSrc = place.imageUrl || getUnsplashFallback(place.category);
 
@@ -640,6 +782,12 @@ function renderGallery() {
                         <span class="text-[10px] text-gray-400 dark:text-gray-500">${place.sentiment || ''}</span>
                     </div>
                 </div>
+                    ${place.recommender ? `
+                    <div class="mb-3 inline-flex items-center gap-1.5 bg-brand-pink/10 text-brand-pink px-2.5 py-1 rounded-md w-fit shadow-sm">
+                        <i class="fa-solid fa-user-check text-xs"></i>
+                        <span class="text-xs font-bold">מומלץ ע"י ${place.recommender}</span>
+                    </div>
+                    ` : ''}
                     <p class="text-sm text-gray-600 dark:text-gray-300 line-clamp-3 mb-4 leading-relaxed">${place.description || 'אין תיאור זמין.'}</p>
                     
                     <div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100 dark:border-gray-800">
@@ -700,7 +848,10 @@ function toggleMapView() {
         setTimeout(() => mapContainer.classList.remove('opacity-0'), 10);
 
         galleryGrid.classList.add('hidden');
-        loadMoreBtn.classList.add('hidden');
+        // FREE UP MEMORY: Clear the innerHTML of gallery when map is open to drop thousands of nodes
+        galleryGrid.innerHTML = '';
+
+        if (loadMoreBtn) loadMoreBtn.classList.add('hidden');
         toggleMapText.textContent = "תצוגת גלריה";
 
         if (!map) {
@@ -715,6 +866,9 @@ function toggleMapView() {
 
         galleryGrid.classList.remove('hidden');
         toggleMapText.textContent = "תצוגת מפה";
+
+        // RESTORE GALLERY: re-render the cards when coming back from map view
+        renderGallery();
     }
 }
 
@@ -788,14 +942,22 @@ function updateMapMarkers() {
             <div dir="rtl" class="font-sans min-w-[200px] p-1">
                 <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1 block">${cat}</span>
                 <h4 class="font-black text-lg mb-2 text-brand-dark">${place.name}</h4>
+                ${place.recommender ? `
+                <div class="mb-2 inline-flex items-center gap-1 bg-brand-pink/10 text-brand-pink px-2 py-0.5 rounded-md w-fit shadow-sm">
+                    <i class="fa-solid fa-user-check text-[10px]"></i>
+                    <span class="text-[10px] font-bold">מומלץ ע"י ${place.recommender}</span>
+                </div>
+                ` : ''}
                 <p class="text-sm text-gray-600 line-clamp-2 mb-3">${place.description || ''}</p>
                 <a href="https://www.google.com/maps/search/?api=1&query=${place.lat},${place.lng}" target="_blank" class="block w-full text-center bg-brand-pink text-white rounded py-2 text-sm font-bold">נווט חזרה</a>
             </div>
         `);
 
-        if (layers[cat]) {
-            layers[cat].addLayer(marker);
+        if (!layers[cat]) {
+            // If we somehow encounter a new category not in layers, create it and add to map
+            layers[cat] = L.layerGroup().addTo(map);
         }
+        layers[cat].addLayer(marker);
 
         bounds.extend([place.lat, place.lng]);
         hasValidCoords = true;
