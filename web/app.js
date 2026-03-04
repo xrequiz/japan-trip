@@ -555,6 +555,22 @@ function setupEventListeners() {
         });
     }
 
+    // Map Filter Mobile Toggle
+    const mapFilterToggleBtn = document.getElementById('mapFilterToggleBtn');
+    if (mapFilterToggleBtn) {
+        mapFilterToggleBtn.addEventListener('click', () => {
+            const content = document.getElementById('mapFilterContent');
+            const icon = document.getElementById('mapFilterIcon');
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        });
+    }
+
     // Map Layer Toggles (delegated)
     document.getElementById('mapLayerToggles').addEventListener('change', (e) => {
         if (e.target.classList.contains('toggle-checkbox')) {
